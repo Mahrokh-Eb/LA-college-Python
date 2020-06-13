@@ -15,6 +15,10 @@ for r in RANK:
 deck += [card]
 
 # Shufelling
+n = len(deck)
+for i in range(n):
+    r= random.randrange (0, i+1)
+    deck[i], deck[r] = deck[r], deck[i]
 
 
 
