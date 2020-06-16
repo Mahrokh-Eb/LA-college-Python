@@ -1,4 +1,6 @@
 # video-15
+# how to use boolean array
+
 import sys
 import random
 
