@@ -3,7 +3,7 @@
 import random
 import stdio
 
-RANGE= 100
+RANGE= 10
 secret = random.randrange(1,RANGE+1)
 print('guess a number between 1 and %d' %RANGE)
 
