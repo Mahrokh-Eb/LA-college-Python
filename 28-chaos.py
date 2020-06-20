@@ -15,7 +15,7 @@ for i in range(n):
     y = (y + cy[r])/2
     stddraw.setPenColor(stddraw.PINK)
     stddraw.point(x, y)
-    stddraw.show(0) # it causes to draw slow not all of a sudden
+    #stddraw.show(0) # it causes to draw slow not all of a sudden
 
 stddraw.show()
 
