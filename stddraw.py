@@ -1,8 +1,3 @@
-'''stddraw.py
-
-Below is the syntax highlighted version of stddraw.py from § Code.
-
-'''
 """
 stddraw.py
 
@@ -31,7 +26,7 @@ else:
     import tkinter as Tkinter
     import tkinter.messagebox as tkMessageBox
     import tkinter.filedialog as tkFileDialog
-	
+
 #-----------------------------------------------------------------------
 
 # Define colors so clients need not import the color module.
@@ -102,7 +97,7 @@ _mousePressed = False
 
 # The position of the mouse as of the most recent mouse click
 _mousePos = None
- 
+
 #-----------------------------------------------------------------------
 # End added by Alan J. Broder
 #-----------------------------------------------------------------------
@@ -148,7 +143,7 @@ def _userY(y):
 #-----------------------------------------------------------------------
 # End added by Alan J. Broder
 #-----------------------------------------------------------------------
-    
+
 #-----------------------------------------------------------------------
 
 def setCanvasSize(w=_DEFAULT_CANVAS_SIZE, h=_DEFAULT_CANVAS_SIZE):
@@ -651,7 +646,7 @@ def _checkForEvents():
     """
     global _surface
     global _keysTyped
-    
+
     #-------------------------------------------------------------------
     # Begin added by Alan J. Broder
     #-------------------------------------------------------------------
@@ -660,7 +655,7 @@ def _checkForEvents():
     #-------------------------------------------------------------------
     # End added by Alan J. Broder
     #-------------------------------------------------------------------
-    
+
     _makeSureWindowCreated()
 
     for event in pygame.event.get():
@@ -671,16 +666,16 @@ def _checkForEvents():
         elif (event.type == pygame.MOUSEBUTTONUP) and \
             (event.button == 3):
             _saveToFile()
-            
+
         #---------------------------------------------------------------
         # Begin added by Alan J. Broder
         #---------------------------------------------------------------
         # Every time the mouse button is pressed, remember
         # the mouse position as of that press.
         elif (event.type == pygame.MOUSEBUTTONDOWN) and \
-            (event.button == 1): 
+            (event.button == 1):
             _mousePressed = True
-            _mousePos = event.pos                      
+            _mousePos = event.pos
         #---------------------------------------------------------------
         # End added by Alan J. Broder
         #---------------------------------------------------------------
@@ -709,11 +704,11 @@ def nextKeyTyped():
 # Begin added by Alan J. Broder
 #-----------------------------------------------------------------------
 
-# Functions for dealing with mouse clicks 
+# Functions for dealing with mouse clicks
 
 def mousePressed():
     """
-    Return True if the mouse has been left-clicked since the 
+    Return True if the mouse has been left-clicked since the
     last time mousePressed was called, and False otherwise.
     """
     global _mousePressed
@@ -721,7 +716,7 @@ def mousePressed():
         _mousePressed = False
         return True
     return False
-    
+
 def mouseX():
     """
     Return the x coordinate in user space of the location at
@@ -731,10 +726,10 @@ def mouseX():
     """
     global _mousePos
     if _mousePos:
-        return _userX(_mousePos[0])      
+        return _userX(_mousePos[0])
     raise Exception(
         "Can't determine mouse position if a click hasn't happened")
-    
+
 def mouseY():
     """
     Return the y coordinate in user space of the location at
@@ -744,10 +739,10 @@ def mouseY():
     """
     global _mousePos
     if _mousePos:
-        return _userY(_mousePos[1]) 
+        return _userY(_mousePos[1])
     raise Exception(
         "Can't determine mouse position if a click hasn't happened")
-    
+
 #-----------------------------------------------------------------------
 # End added by Alan J. Broder
 #-----------------------------------------------------------------------
@@ -899,7 +894,7 @@ def _regressionTest():
     #pic = p.Picture('saveIcon.png')
     #picture(pic, .5, .85)
     #show(0.0)
-    
+
     # Test handling of mouse and keyboard events.
     setPenColor(BLACK)
     import stdio
@@ -910,7 +905,7 @@ def _regressionTest():
         if hasNextKeyTyped():
             stdio.write(nextKeyTyped())
         show(0.0)
-        
+
     # Never get here.
     show()
 
@@ -933,4 +928,3 @@ def _main():
 
 if __name__ == '__main__':
     _main()
-
