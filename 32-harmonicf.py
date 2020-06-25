@@ -11,8 +11,8 @@ def harmonic(n):
     for i in range(1, n+1):
         total += 1/ i
     return total
-
-for i in range(1, len(sys.argv)): #تو کتابخونه sys یه متغیری به نام argv وجود داره که یک ارایه هست.
+                # len array = number of it's var
+for i in range(1, len(sys.argv)): #تو کتابخونه sys یه متغیری به نام argv وجود داره که یک ارایه هست.- پردازش آرایه با حلقه for
     arg = int(sys.argv[i])
     value = harmonic(arg) #function call
     print(value)
