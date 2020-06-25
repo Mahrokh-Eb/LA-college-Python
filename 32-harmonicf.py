@@ -1,8 +1,7 @@
 '''
 Programmer: Mahrokh Ebrahimi
-Discription:
-    python structure programming
-    explaination of the function
+Discription: python structure programming
+             1-imports 2-defining the functions 3-global part (calling the functions)
 Date: 6/24/2020
 '''
 import sys
