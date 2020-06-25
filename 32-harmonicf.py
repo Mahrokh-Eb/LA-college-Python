@@ -15,6 +15,6 @@ def harmonic(n):
 
 for i in range(1, len(sys.argv)):
     arg = int(sys.argv[i])
-    value = harmonic(arg)
+    value = harmonic(arg) #function call
     print(value)
 
