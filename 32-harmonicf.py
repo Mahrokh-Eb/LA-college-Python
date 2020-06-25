@@ -12,8 +12,15 @@ def harmonic(n):
         total += 1/ i
     return total
 
-for i in range(1, len(sys.argv)):
+for i in range(1, len(sys.argv)): #تو کتابخونه sys یه متغیری به نام argv وجود داره که یک ارایه هست.
     arg = int(sys.argv[i])
     value = harmonic(arg) #function call
     print(value)
 
+'''
+output command:
+ python 32-harmonicf.py 2 4 5 
+1.5
+2.083333333333333
+2.283333333333333
+'''
