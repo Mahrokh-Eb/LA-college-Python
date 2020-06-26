@@ -14,6 +14,7 @@ print()
 # Discription: using for loop
 for i in range(0, 4, 1):
     print(i)
+print()
 
 # nested for loop
 for i in range(3):
