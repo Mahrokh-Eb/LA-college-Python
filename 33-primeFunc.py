@@ -5,18 +5,16 @@ Date: 6/25/2020
 '''
 import sys
 
-
 def prime(n):
-    digit = int(sys.argv[n])
-    if digit / 2 == 0:
+    if n <= 2: return False
+    digit = n
+    if digit % 2 == 0:
         print('it is prime')
-    else:
+    elif digit % 2 !=0:
         print(' it is NOT prime!')
     return digit
 
-digit = int(sys.argv[1])
-for i in range(digit):
-    num = prime(n)
+print(prime(int(sys.argv[1])))
 
 
 
