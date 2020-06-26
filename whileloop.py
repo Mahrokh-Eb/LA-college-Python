@@ -18,4 +18,4 @@ for i in range(0, 4, 1):
 # nested for loop
 for i in range(3):
     for j in range(4):
-        print(i, 'x', j, '=' i*j)
+        print(i, 'x', j, '=', i*j)
