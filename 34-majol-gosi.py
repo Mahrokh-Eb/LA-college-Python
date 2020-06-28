@@ -9,3 +9,18 @@ def phi(x):
 
 def pdf(x, mu=0.0, sigma=1.0):
     return phi((x-mu)/sigma)/sigma
+
+def Phi(z):
+    if z < -8.0: return 0.0
+    if z > 8.0: return 1.0
+    total = 0
+    term = z
+    i = 3
+    while total != total + term:
+        total += term
+        term *= z * z / float(i)
+        i +=2
+    return 0.5 + phi(z) * total
+
+def cdf(z, mu = 0.0, sigma = 1.0):
+    return phi((z - mu)/sigma) 
