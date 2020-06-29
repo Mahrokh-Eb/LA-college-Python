@@ -4,7 +4,7 @@ Discription: return cube of a digit
 Date: 6/27/2020
 '''
 import math
-def phi(x):
+def phi(x): # private function: _phi(), it is used only in this program
     return math.exp(-x*x/2.0)/math.sqrt(2.0*math.pi)
 
 def pdf(x, mu=0.0, sigma=1.0):
@@ -23,4 +23,13 @@ def Phi(z):
     return 0.5 + phi(z) * total
 
 def cdf(z, mu = 0.0, sigma = 1.0):
-    return phi((z - mu)/sigma) 
+    return phi((z - mu)/sigma)
+
+# test
+if __name__ == '__main__':
+    fraction = cdf(820, 1019, 209)
+    print(fraction)
+
+
+
+
