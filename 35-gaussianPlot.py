@@ -21,4 +21,4 @@ def main():
     stddraw._show()
 
 if __name__ == '__main__':
-    main()
+    main() 
