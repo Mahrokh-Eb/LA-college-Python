@@ -29,4 +29,5 @@ stddraw.setCanvasSize(1000, 400 )
 stddraw.setYscale(0, 1.0, max(max(norm), max(phi)))
 stdstats.plotBars(norm)
 stdstats.plotLines(phi)
+stddraw.show()
 
