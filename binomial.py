@@ -9,4 +9,4 @@ def binomial(n, p= 0.5):
     for i in range(n):
         if bernoulli(p):
             heads +=1
-        return heads
+    return heads
