@@ -25,6 +25,7 @@ phi = [0.0] * (n+1)
 stddev = math.sqrt(n)/2.0
 for i in range(n+1):
     phi[i] = gaussian.pdf(n, n/2, stddev)
-stddraw.setCanvasSize(1000, 400)
+stddraw.setCanvasSize(1000, 400 )
+stddraw.setYscale(0, 1.0, max(max(norm), max(phi)))
 
 
