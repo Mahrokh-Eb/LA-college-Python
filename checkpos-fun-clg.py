@@ -1,3 +1,6 @@
+'''checking to see if the integer that user input are posotive,
+ we use functin to call it for eah input seprately'''
+
 def checkPositive(num):
     while(num<0):
         num = int(input('please try + number again: '))
