@@ -8,5 +8,5 @@ checkPositive(num1)
 
 num2 = int(input('enter second + integer: '))
 checkPositive(num2)
-
-print('num1+ num2 = ' ,num1+ num2)
+sum = num1 + num2
+print('num1+ num2 = ' , sum)
