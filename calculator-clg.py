@@ -26,6 +26,9 @@ def Subtraction(num1, num2):
 def Multiplication(num1, num2):
     return num1 * num2
 
+def Division(num1, num2):
+    return num1 / num2
+
 
 option = 0
 while (option !=5 ):
@@ -41,3 +44,6 @@ while (option !=5 ):
 
     if option == 3:
         print(num1, 'x', num2, '= ', Multiplication(num1, num2))
+
+    if option == 4:
+        print(num1, '/', num2, '= ', Division(num1, num2))
