@@ -29,6 +29,8 @@ def Multiplication(num1, num2):
 def Division(num1, num2):
     return num1 / num2
 
+def Quit():
+    return exit()
 
 option = 0
 while (option !=5 ):
@@ -47,3 +49,6 @@ while (option !=5 ):
 
     if option == 4:
         print(num1, '/', num2, '= ', Division(num1, num2))
+
+    if option == 4:
+        print('Quit calculator.py', Quit(num1, num2))
