@@ -23,7 +23,7 @@ def main():
     option = 0
     while (option != 5):
         option = int(input(
-            'which one? \n 1) Addition\n 2) Subtraction \n 3) Multiplication \n 4) Division \n 5) Quit calculator.py'))
+            'which one? \n 1) Addition\n 2) Subtraction \n 3) Multiplication \n 4) Division \n 5) Quit calculator.py\n Choose your number: '))
         option = checkValidation(option)
 
         if option !=5:
