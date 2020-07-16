@@ -4,15 +4,23 @@
 
 #with using func:
 
-word = input('put your word: ')
-str = ''
-for i in range(len(word)-1, -1, -1):
-    str += word[i]
-    #print(str)
+def is_palindrome(word):
+    str = ''
+    for i in range(len(word) - 1, -1, -1):
+        str += word[i]
 
-if str == word:
-    print('the word is palindrome :) ')
-else:
-    print('it is not :(')
+    if str == word:
+        return True
+    else:
+        return False
+
+def main():
+    word = input('put your word: ')
+    if is_palindrome(word)== True:
+        print('it is palindrom. :) ')
+    else:
+        print('Nooooo, it is not palindrom. ')
+main()
+
 
 
