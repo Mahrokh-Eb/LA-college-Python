@@ -4,13 +4,25 @@
 
 #def is_palindrome(word):
 
-firstName = 'MAhrokh'
-for i in firstName:
-    print(i)
 
-lastName = 'Ebrahimi'
-for i in range(len(lastName)):
-    print(lastName[i])
+word = input('put your word to see if it is palindrome or not: ')
+
+for i in range(len(word)-1, -1, -1):
+    rev = word[i]
+    print(i, '-', word[i])
+
+print('-------------------------------')
+
+for i in range(len(word)):
+    dir = word[i]
+    print(i, '-' , word[i])
+
+if rev == dir:
+    print('the word is palindrome')
+else:
+    print('OH, my bad! the word is NOT palindrome')
+
+
 
 
 
