@@ -1,6 +1,9 @@
 # finding maximum digit, using a function
 
 def findMax(mylist):
+    """
+for finding the max
+    """
     maxItem = mylist[0]
     for i in range(len(mylist)):
         if mylist[i] > maxItem:
