@@ -1,23 +1,18 @@
-
+# defining the function befor solving, solved completed is in prjct-clg-3-v0
 employees = ["M", "Miguel saba", "Maria Rami"]
 salaries = [20, 30000.00, 40000.00]
 
-#employee = input('employee?  ')
-#salary = int(input('salary?  '))
+employee = input('employee?  ')
+salary = int(input('salary?  '))
 #index = int(input('index? '))
-
-'''#2- Remove an Employee .......removeEmployee(employee, salary)
+'''
+#2- Remove an Employee .......removeEmployee(employee, salary)
 def removeEmployee(employee, salary):
     if employee in employees:
         employees.pop(employees.index(employee))
     print('employees after remove', employees)
 
     if salary in salaries:
-        salaries.pop(salaries.index(salary))
-    print('salaries after remove',salaries)
-    return (employees, salaries)
-removeEmployee(employee, salary)'''
-'''if salary in salaries:
         salaries.pop(salaries.index(salary))
     print('salaries after remove',salaries)
     return (employees, salaries)
