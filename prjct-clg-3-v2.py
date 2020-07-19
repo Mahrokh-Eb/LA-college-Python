@@ -1,4 +1,4 @@
-# defining the function befor solving, solved completed is in prjct-clg-3-v0
+# defining the function before solving, solved completed is in prjct-clg-3-v0. i put all the belows in func 
 employees = ["M", "Miguel saba", "Maria Rami"]
 salaries = [20, 30000.00, 40000.00]
 
