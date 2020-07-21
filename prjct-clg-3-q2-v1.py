@@ -25,6 +25,7 @@ for i in range(studentsNum):
 print('studentName   ex1 ex2 ex3 ex4 ex5 \n===================================')
 print(esm)
 print(scores)
+print(esm, scores)
 
 # find and return the lowest of the 5 scores passed to it
 mini = min(scores)
