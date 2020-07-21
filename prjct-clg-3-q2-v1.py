@@ -49,3 +49,7 @@ for i in scores:
     sumofAll = sum(scores)
     average = sumofAll / len(scores)
 print('the average is: ', average)
+
+
+
+#prjct-clg-3-q2-v2.py
