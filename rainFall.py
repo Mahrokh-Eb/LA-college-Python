@@ -31,7 +31,7 @@ for i in fileRead:
 print(total)
 print('average = ', format(total/(len(myList)),'.2f' ))
 fileWrite.write('    average rainfall = '+ format(total/(len(myList)),'.2f' ))
-fileWrite.write('     done')
+fileWrite.write('\n'+'done')
 
 
 
