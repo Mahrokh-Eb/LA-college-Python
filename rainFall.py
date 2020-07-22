@@ -20,6 +20,7 @@ line = 1
 total = 0
 for i in fileRead:
     if line ==3:
+        fileWrite.write(i)
         myList = i.split() #it split to a list
         print(myList)
         print(i)         #it is string
@@ -29,7 +30,8 @@ for i in fileRead:
 
 print(total)
 print('average = ', format(total/(len(myList)),'.2f' ))
-fileWrite.write('average rainfall = '+ format(total/(len(myList)),'.2f' ))
+fileWrite.write('    average rainfall = '+ format(total/(len(myList)),'.2f' ))
+fileWrite.write('     done')
 
 
 
