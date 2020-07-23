@@ -12,7 +12,7 @@ the EOF is reached, and count how many pieces of rain data you read in.
 Using notepad you can create a data file called Rainfall.txt with the following data.'''
 
 #reading from txt file
-fileRead = open('rainFall.txt', 'r')
+fileRead = open('rainFall-clg-p12.txt', 'r')
 fileWrite = open('rainFallResult.txt', 'w')
 
 #print(fileRead.read())
@@ -33,5 +33,7 @@ print('average = ', format(total/(len(myList)),'.2f' ))
 fileWrite.write('    average rainfall = '+ format(total/(len(myList)),'.2f' ))
 fileWrite.write('\n'+'done')
 
+fileRead.close()
+fileWrite.close()
 
 
