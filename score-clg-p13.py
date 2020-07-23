@@ -30,6 +30,7 @@ for i in fileRead:
     fileWrite.write(str(minimum))
     print(scoresList )
     fileWrite.write("\n")
+    fileWrite.write('done!')
 
 
 
