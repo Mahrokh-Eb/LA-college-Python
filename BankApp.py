@@ -17,11 +17,12 @@ for i in fileRead:
     for t in range(2, len(myList)):
         balances.append(float(myList[t]))
 def menue(indexBalance):
-    option = input('Type D to deposit money\nType W to withdraw money\nType B to display Balance\nType C to change user, display user name\nType E to exit: ---')
-    if (option=='D'):
-        depositAmount = int(input('what is the amount of deposit? '))
-        print(indexBalance)
-        DepositFunction(depositAmount, indexBalance)
+    option = 'A'
+    while(option != 'D' or 'W' or 'B' or 'C' or 'E' ):
+        option = input('Type D to deposit money\nType W to withdraw money\nType B to display Balance\nType C to change user, display user name\nType E to exit: ---')
+        if (option=='D'):
+            depositAmount = int(input('what is the amount of deposit? '))
+            DepositFunction(depositAmount, indexBalance)
 
 def DepositFunction(depositAmount, indexBalance):
     balanceChange = balances[indexBalance]
@@ -29,16 +30,9 @@ def DepositFunction(depositAmount, indexBalance):
     print('new balance after deposit is: ',balanceChange)
 
 
-
-#print(userName[0:1]) it gives mike
 print(userName)
 print(passWord)
 print(balances)
-# username ro az user begir age tu liste username hat bud, index un ro dar are
-# pass ro az user begir, ba passe marbut be un user compare kon,
-# passe marbut b un ro az indexesh mifahmi.
-# age index e user 1, e. ba pass index i compare kon
-
 
 while True:
     user = input('please Enter your userName: ')
