@@ -23,7 +23,9 @@ def menue():
         DepositFunction(depositAmount)
 
 def DepositFunction(depositAmount):
-
+#index e user o pass ro dari,
+# vhamun index male balance e. uno update kon
+# project2, program1, mige keep displaying menue untill user bege exit
 
 
 #print(userName[0:1]) it gives mike
@@ -54,6 +56,7 @@ while True:
                     if indexUser == indexPass:
                         print('welcome Beauty!')
                         menue()
+
 
 
 
