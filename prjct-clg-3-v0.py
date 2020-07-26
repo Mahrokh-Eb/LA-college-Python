@@ -2,14 +2,16 @@
 Description: Program1: LISTS & FUNCTIONS ( 50 Points)
 For this program, you have to write your own functions without using any of the build in functions.
 List functions that you CAN'T use: insert(), append(), remove(), del(), max(), min(), reverse(), sort(), etc.
-Only functions that you MAY use:   len(), index(). Here is an sample output:
+Only functions that you MAY use:   len(), index().
 
-Create a menu to allow the user to add, insert, remove, find the maximum score, the minimum score, and sort the list in descending order (larger to smaller value).
+Here is an sample output:
+Create a menu to allow the user to add, insert, remove, find the maximum score, the minimum score,
+and sort the list in descending order (larger to smaller value).
 
 These are your lists:
 employees=["Mike navarro","Miguel saba","Maria Rami"]
-
 salaries=  [20000.00, 30000.00, 40000.00]
+
 1- Add a new Employee
 2- Remove an Employee
 3- Insert new Employee
@@ -31,21 +33,22 @@ salaries=  [20000.00, 30000.00, 40000.00]
 8- Quit the program .....exit()
 
 Please enter your option: 3
-
 Where do you want to insert the item? (Enter the index number) 1
 Please enter the employee name you want to insert: "Tina Mari"
 Please enter the employee salary you want to insert: 65000.00
 Your program should call the function insertNewEmployee(employee, index, salary)
 
 Your original Lists:
-
 employees = ["Mike navarro","Miguel saba","Maria Rami"]
 salaries=  [20000.00, 30000.00, 40000.00]
+
 After inserting an item into index 1:
 employees = ["Mike navarro","Tina Mari", "Miguel saba","Maria Rami"]
 salaries=  [20000.00, 65000.00, 30000.00, 40000.00]
 
-Once the user enters an option, your program should execute the code for that option and displays the list before and after the operations. Make sure to use a while loop so the program runs until user enters the quit option.
+Once the user enters an option, your program should execute the code for that option
+and displays the list before and after the operations. Make sure to use a while loop
+so the program runs until user enters the quit option.
 
 Date: 7/16/2020
 '''
@@ -55,30 +58,33 @@ salaries = [20000.00, 30000.00, 40000.00]
 
 # 1- Add a new Employee ..........addEmployee(employee, salary)
 def addEmployee(employee, salary):
-    employees = ["Mike navarro", "Miguel saba", "Maria Rami"]
-    salaries = [20000.00, 30000.00, 40000.00]
+    global employees
+    global salaries
     employees += employee
     salaries += salary
     return employees, salaries
 
 
 # 2- Remove an Employee .......removeEmployee(employee, salary)
-def removeEmployee(employee, salary):
-    employees = ["Mike navarro", "Miguel saba", "Maria Rami"]
-    salaries = ['20000.00', '30000.00', '40000.00']
-    if employee in employees:
-        employees.pop(employees.index(employee))
-    print('employees after remove', employees)
+def removeEmployee(employee):
+    global employees
+    global salaries
+    #indexEmployee = employees.index(employee)
+    for i in range(len(employees)):
+        if (employees[i]==employee):
+            ten = employees.remove(employee)
+            print('employees after remove', ten)
+    #print('salaries after remove', salaries)
 
-    if salary in salaries:
+'''    if salary in salaries:
         salaries.pop(salaries.index(salary))
     print('salaries after remove', salaries)
-
+'''
 
 # 3- Insert an Employee into a specific location.....insertNewEmployee(employee, index, salary)
 def insertNewEmployee(employee, index, salary):
-    employees = ["Mike navarro", "Miguel saba", "Maria Rami"]
-    salaries = [20000.00, 30000.00, 40000.00]
+    global employees
+    global salaries
     for i in range(0, len(employees), 1):
         employee = [employee]
         if i == index:
@@ -157,16 +163,15 @@ while (option <= 8):
 
     # 1- Add a new Employee ..........addEmployee(employee, salary)
     if option == 1:
-        employee = [input('who is the employee? ')]
+        employee = [input('you select to add the employee. What is the name of the employee? ')]
         salary = [input('what is the salary? ')]
         print(addEmployee(employee, salary))
 
     # 2- Remove an Employee .......removeEmployee(employee, salary)
     if option == 2:
-        employee = input(
-            'who is the employee that you want to remove?(select betwwen "Mike navarro","Miguel saba","Maria Rami") ')
-        salary = input('what is the salary you want to remove?(select between 20000.00, 30000.00, 40000.00) ')
-        removeEmployee(employee, salary)
+        employee = input('who is the employee that you want to remove?')
+        #salary = input('what is the salary you want to remove?')
+        removeEmployee(employee)
 
     # 3- Insert an Employee into a specific location.....insertNewEmployee(employee, index, salary)
     if option == 3:
